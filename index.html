@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:;">
+    <title>Surith Bhowmick - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">SB</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-blue-400 transition-colors">Home</a>
+                        <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-blue-400 transition-colors">About</a>
+                        <a href="#research" class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-blue-400 transition-colors">Research</a>
+                        <a href="#experience" class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-blue-400 transition-colors">Experience</a>
+                        <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-blue-400 transition-colors">Skills</a>
+                        <a href="#education" class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-blue-400 transition-colors">Education</a>
+                        <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium hover:text-blue-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Home</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</a>
+                <a href="#research" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Research</a>
+                <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Experience</a>
+                <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Skills</a>
+                <a href="#education" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Education</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="text-center">
+                <div class="mb-8 inline-block">
+                    <div class="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 floating">
+                        <div class="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
+                            <span class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">SB</span>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                    <span class="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent typing-text"></span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-2 fade-in-up" style="animation-delay: 0.2s;">Result-Driven Academic & Management Professional</p>
+                <p class="text-lg md:text-xl text-gray-400 mb-8 fade-in-up" style="animation-delay: 0.4s;">
+                    <i class="fas fa-map-marker-alt text-blue-400"></i> Mount Pleasant, MI, USA
+                </p>
+                <div class="flex justify-center space-x-4 mb-8 fade-in-up" style="animation-delay: 0.6s;">
+                    <a href="tel:+19896986685" class="text-gray-300 hover:text-blue-400 transition-colors">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                    <a href="mailto:surithb@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/surith-bhowmick/" target="_blank" class="text-gray-300 hover:text-blue-400 transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+                <a href="#about" class="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 fade-in-up" style="animation-delay: 0.8s;">
+                    Explore My Work
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-3xl text-gray-400"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 scroll-reveal">
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Career Summary</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I am a result-driven academic management professional and trained electrical engineer with strong interests in research teaching and technology driven business solutions. My background combines engineering expertise industry experience data driven analysis and higher education instruction with a focus on innovation operational efficiency and evidence-based decision making.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20 bg-gray-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 scroll-reveal">
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Research Projects</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-1 gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-blue-500">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-book text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm text-gray-400 mb-2">Under First Review - International Journal of Operations Development January 2026</p>
+                            <p class="text-gray-300">Chou, C.C., Li, C., Bhowmick, S., Liu, C., and Tacheva, Z., "From Presence to Performance: Examing the Differentiated Value of Facebook and Twitter in Manufacturing and Service Firms."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-purple-500">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-book text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm text-gray-400 mb-2">Work in Progress</p>
+                            <p class="text-gray-300">Chou, C.C. and Bhowmick, S., (2026) "Beyond Displacement: A Resource-Based View of AI-Induced Job Creation and Employee Productivity Enhancement."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-pink-500">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-600 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-book text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm text-gray-400 mb-2">Work in Progress</p>
+                            <p class="text-gray-300">Chou, C.C. and Bhowmick, S., (2026) "From Automation to Augmentation: Reconceptualizing Operational Productivity through Human-AI Collaborative Systems."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 scroll-reveal">
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Professional Experience</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hidden md:block"></div>
+                
+                <!-- Experience Items -->
+                <div class="space-y-12">
+                    <!-- Item 1 -->
+                    <div class="relative scroll-reveal">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-8 text-right">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-blue-500">
+                                    <h3 class="text-2xl font-bold text-blue-400 mb-2">ADJUNCT FACULTY</h3>
+                                    <p class="text-lg text-gray-300 mb-2">Central Michigan University | Mount Pleasant, MI, USA</p>
+                                    <p class="text-sm text-gray-400 mb-4">May 2025 – Present</p>
+                                    <p class="text-gray-300 mb-4">My Courses: MGT 258 Effective Management of HR in Orgs, MGT 312 Introduction to Management, MGT365 International Business, MGT320 Principles of Management</p>
+                                    <ul class="text-left space-y-2 text-gray-300">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+                                            <span>I taught management courses using real- world case studies and interactive discussions. Supported research on student engagement and instructional design, aiming to enhance learning outcomes through structured activities and feedback.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hidden md:flex w-16 h-16 absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full items-center justify-center shadow-lg">
+                                <i class="fas fa-briefcase text-xl"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative scroll-reveal">
+                        <div class="md:flex items-center flex-row-reverse">
+                            <div class="md:w-1/2 md:pl-8 text-left">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500">
+                                    <h3 class="text-2xl font-bold text-purple-400 mb-2">TRAINEE ASSISTANT OFFICER</h3>
+                                    <p class="text-lg text-gray-300 mb-2">IFIC Bank Ltd | Bangladesh</p>
+                                    <p class="text-sm text-gray-400 mb-4">Feb 2021 – Aug 2021</p>
+                                    <p class="text-gray-300 mb-4">Subbranch Head Tangail Babystard Uposhaka</p>
+                                    <ul class="space-y-2 text-gray-300">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
+                                            <span>In my inaugural month as a trainee, our branch achieved disbursements worth 1million BDT, PROJECT LOCAL Money Laundering. Increased revenue from 100k to 500k by community outreach. Disbursed loans worth 10 million BDT through data analysis increase the growth 0.2% on total branch revenue.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hidden md:flex w-16 h-16 absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full items-center justify-center shadow-lg">
+                                <i class="fas fa-building text-xl"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pr-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative scroll-reveal">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-8 text-right">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-pink-500">
+                                    <h3 class="text-2xl font-bold text-pink-400 mb-2">JUNIOR OFFICER OPERATIONS</h3>
+                                    <p class="text-lg text-gray-300 mb-2">Arcmana Ltd. | Bangladesh</p>
+                                    <p class="text-sm text-gray-400 mb-4">Sep 2019 – Jan 2021</p>
+                                    <p class="text-gray-300 mb-4">A Developing Company built Buildings on cement basis</p>
+                                    <ul class="text-left space-y-2 text-gray-300">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check-circle text-pink-400 mt-1 mr-2"></i>
+                                            <span>I Managed cost-effective materials through market partnership; Organized vendor meetings to improve product knowledge. Secure best deals on raw material like cement and iron. By coordinating with the iron company, managing the revenue to 100k BDT.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hidden md:flex w-16 h-16 absolute left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-pink-500 to-red-600 rounded-full items-center justify-center shadow-lg">
+                                <i class="fas fa-hard-hat text-xl"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 scroll-reveal">
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Technical Skills</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-blue-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-400">Programming</h3>
+                    </div>
+                    <p class="text-gray-300">Python, C/C++, MATLAB, HTML, CSS, Microsoft office, Adobe</p>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-purple-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-project-diagram text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-400">Management</h3>
+                    </div>
+                    <p class="text-gray-300">IT Project management, Critical thinking, Leadership, Team management</p>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-pink-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-microscope text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pink-400">Research</h3>
+                    </div>
+                    <p class="text-gray-300">Research skill (Research interest area in AI, Supply chain and Information systems)</p>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-green-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-boxes text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-400">Business</h3>
+                    </div>
+                    <p class="text-gray-300">Business Development and management</p>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-yellow-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-yellow-400">Analytics</h3>
+                    </div>
+                    <p class="text-gray-300">Analytical Skills</p>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-indigo-500">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-trophy text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-400">Awards</h3>
+                    </div>
+                    <p class="text-gray-300">Arduino Lead – University MARS Rover Team | 4th position in CUET ROBOFIGHT 2014 | Social media planning | 3rd position Notre Dame Science Project Display</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 scroll-reveal">
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Education</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-blue-500 group">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-graduation-cap text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-blue-400 mb-2">MASTER'S DEGREE</h3>
+                            <p class="text-lg text-gray-300 mb-2">Information Technology Project Management</p>
+                            <p class="text-gray-400 mb-2">Central Michigan University, USA</p>
+                            <p class="text-sm text-gray-500">2022 – 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-purple-500 group">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-graduation-cap text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-purple-400 mb-2">BACHELOR'S DEGREE</h3>
+                            <p class="text-lg text-gray-300 mb-2">Electrical and Electronic Engineering</p>
+                            <p class="text-gray-400 mb-2">North South University, Bangladesh</p>
+                            <p class="text-sm text-gray-500">2014 – 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership Section -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-center mb-8 scroll-reveal">
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Club & Leadership</span>
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-blue-500">
+                        <div class="flex items-start">
+                            <i class="fas fa-star text-blue-400 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-300">Vice President- NSU Computer & Engineering Club (2017-18)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-purple-500">
+                        <div class="flex items-start">
+                            <i class="fas fa-star text-purple-400 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-300">Secretary- CMU International Student Org(2023-24)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-pink-500">
+                        <div class="flex items-start">
+                            <i class="fas fa-star text-pink-400 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-300">Treasurer- Project Management Chapter(2022-23)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-green-500">
+                        <div class="flex items-start">
+                            <i class="fas fa-star text-green-400 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-300">Deputy Secretary- Alpha Iota Delta Honor Society (2024)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 scroll-reveal hover:border-yellow-500">
+                        <div class="flex items-start">
+                            <i class="fas fa-star text-yellow-400 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-300">Associate Justice- CMU Student Government Association (2024)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 scroll-reveal">
+                    <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Get In Touch</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="tel:+19896986685" class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-blue-500 text-center scroll-reveal group">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-400">Phone</h3>
+                        <p class="text-gray-300">+(989) 698-6685</p>
+                    </a>
+
+                    <a href="mailto:bhowm1s@cmich.edu" class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-purple-500 text-center scroll-reveal group">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-purple-400">Email</h3>
+                        <p class="text-gray-300">bhowm1s@cmich.edu</p>
+                        <p class="text-gray-300">surithb@gmail.com</p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/surith-bhowmick/" target="_blank" class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-pink-500 text-center scroll-reveal group">
+                        <div class="w-16 h-16 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-pink-400">LinkedIn</h3>
+                        <p class="text-gray-300">surith-bhowmick</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">© 2026 Surith Bhowmick. All rights reserved.</p>
+                <p class="text-gray-500 text-sm mt-2">Built with passion and code</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
