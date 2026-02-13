@@ -164,13 +164,14 @@
     animation: float 3s ease-in-out infinite;
 }
 
-/* Enhanced Profile Picture Styles */
+/* Enhanced Profile Picture Styles with Smoother Animations */
 .profile-container {
     position: relative;
     width: 220px;
     height: 220px;
     margin: 0 auto;
     animation: float 3s ease-in-out infinite;
+    will-change: transform;
 }
 
 .profile-ring {
@@ -182,6 +183,7 @@
     animation: gradientRotate 4s linear infinite;
     filter: blur(2px);
     opacity: 0.8;
+    will-change: transform, background-position;
 }
 
 .profile-wrapper {
@@ -195,11 +197,11 @@
         0 0 30px rgba(102, 126, 234, 0.5),
         0 0 60px rgba(245, 87, 108, 0.3),
         0 10px 40px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .profile-wrapper:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
     box-shadow: 
         0 0 50px rgba(102, 126, 234, 0.7),
         0 0 80px rgba(245, 87, 108, 0.5),
@@ -213,6 +215,11 @@
     object-fit: cover;
     border: 4px solid #111827;
     display: block;
+    transition: transform 0.4s ease;
+}
+
+.profile-wrapper:hover .profile-image {
+    transform: scale(1.05);
 }
 
 @keyframes gradientRotate {
@@ -276,14 +283,59 @@
     }
 }
 
-/* Smooth Transitions */
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Performance Optimization */
 * {
-    transition: all 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth Transitions with Better Easing */
+* {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a, button {
     position: relative;
     overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* GPU Acceleration for Better Performance */
+.scroll-reveal,
+.bg-gray-800\/50,
+.profile-container,
+.gradient-blob,
+nav,
+.floating {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Smoother Click Response */
+a:active, button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Improved Hover States */
+a:hover, button:hover {
+    transition: all 0.2s ease-out;
+}
+
+/* Smooth Navigation Links */
+.nav-link, .mobile-nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:active {
+    transform: translateY(1px);
 }
 
 /* Ripple Effect */
@@ -303,9 +355,9 @@ a, button {
     }
 }
 
-/* Card Hover Effects */
+/* Card Hover Effects with Smoother Transitions */
 .bg-gray-800\/50 {
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
@@ -323,11 +375,15 @@ a, button {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bg-gray-800\/50:hover::before {
     opacity: 0.5;
+}
+
+.bg-gray-800\/50:hover {
+    transform: translateY(-8px) scale(1.02);
 }
 
 /* Navigation Active State */
@@ -414,9 +470,25 @@ body.loaded {
     }
 }
 
-/* Icon Rotation Animation */
+/* Icon Rotation Animation with Smooth Easing */
 .fa {
     transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Improved Button Hover Effects */
+a[href^="#"].inline-block {
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a[href^="#"].inline-block:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(96, 165, 250, 0.4);
+}
+
+a[href^="#"].inline-block:active {
+    transform: translateY(0) scale(1);
 }
 
 /* Glow Effect on Hover */
@@ -504,10 +576,10 @@ html {
 
 /* Backdrop Blur Enhancement */
 .backdrop-blur-sm {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
+    backdrop-filter:with Smoother Animation */
+.bg-gray-800\/50 {
+    transform-style: preserve-3d;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)
 /* Card Tilt Effect */
 .bg-gray-800\/50 {
     transform-style: preserve-3d;

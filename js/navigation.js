@@ -49,10 +49,18 @@ class NavigationManager {
                 const target = document.querySelector(anchor.getAttribute('href'));
                 if (target) {
                     const offsetTop = target.offsetTop - 64;
+                    
+                    // Smooth scroll with custom easing
                     window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'
                     });
+                    
+                    // Add visual feedback
+                    anchor.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        anchor.style.transform = '';
+                    }, 150);
                 }
             });
         });

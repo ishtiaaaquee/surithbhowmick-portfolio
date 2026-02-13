@@ -17,18 +17,42 @@ class CardEffectsManager {
     setupHoverEffects() {
         this.cards.forEach(card => {
             card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
+                card.style.transform = 'translateY(-8px) scale(1.02)';
             });
             
             card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
+                card.style.transform = 'translateY(0) scale(1)';
             });
+            
+            // Add touch support for mobile
+            card.addEventListener('touchstart', () => {
+                card.style.transform = 'translateY(-8px) scale(1.02)';
+            }, { passive: true });
+            
+            card.addEventListener('touchend', () => {
+                setTimeout(() => {
+                    card.style.transform = 'translateY(0) scale(1)';
+                }, 300);
+            }, { passive: true });
         });
     }
 
     setupTiltEffects() {
         this.cards.forEach(card => {
+            let isHovering = false;
+            
+            card.addEventListener('mouseenter', () => {
+                isHovering = true;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                isHovering = false;
+                card.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) translateY(0)';
+            });
+            
             card.addEventListener('mousemove', (e) => {
+                if (!isHovering) return;
+                
                 const rect = card.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
@@ -39,11 +63,10 @@ class CardEffectsManager {
                 const deltaX = (x - centerX) / centerX;
                 const deltaY = (y - centerY) / centerY;
                 
-                card.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg) translateY(-5px)`;
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) translateY(0)';
+                // Use requestAnimationFrame for smoother animation
+                requestAnimationFrame(() => {
+                    card.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg) translateY(-8px) scale(1.02)`;
+                });
             });
         });
     }

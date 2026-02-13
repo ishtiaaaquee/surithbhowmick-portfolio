@@ -47,9 +47,13 @@ class ParallaxManager {
         const scrolled = window.pageYOffset;
         if (this.heroSection) {
             const parallaxElements = this.heroSection.querySelectorAll('.gradient-blob');
-            parallaxElements.forEach((element, index) => {
-                const speed = (index + 1) * 0.15;
-                element.style.transform = `translateY(${scrolled * speed}px)`;
+            
+            // Use requestAnimationFrame for smoother animation
+            requestAnimationFrame(() => {
+                parallaxElements.forEach((element, index) => {
+                    const speed = (index + 1) * 0.15;
+                    element.style.transform = `translateY(${scrolled * speed}px)`;
+                });
             });
         }
     }
